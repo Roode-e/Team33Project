@@ -1,0 +1,17 @@
+a.page {
+    width: 25%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.frame {
+    border-top: 1px solid black;
+    
+}
+
+img.icon {
+    width: 1cm;
+    
+}
+
+
