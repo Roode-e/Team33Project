@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    
     <title>Tab</title>
 
     <!----------------------------------------------->
@@ -29,34 +28,54 @@
     <!------------------->
     <!--  HTML Section -->
     <!------------------->
-    <div class="header">
-        <div class="top-one"><img src="Images/orders_dark.png"></div>
-        <h2 class="top-two">Your Tab</h2>
+
+
+    <title>Restaraunts</title>
+
+    <body>
+        <div id="result">
+            <!--Position information will be inserted here-->
+        </div>
+        <button type="button" onclick="showPosition();" style='font-size:18px'>Location <i class='fas fa-map-marker-alt'></i></button>
+    </body>
+
+    <div class="input-group mt-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Search Restaraunts</span>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+
+<div class="bs-example">
+    <h4>Horizontal alignment using float classes</h4>
+    <div class="box clearfix">
+        <img src="/examples/images/avatar.svg" class="pull-left" alt="Sample Image">
+        <img src="/examples/images/avatar.svg" class="pull-right" alt="Sample Image">
     </div>
     
+    <h4>Left alignment using text alignment classes</h4>
+    <div class="box text-left">
+        <img src="images/.jpg" alt="Sample Image">
+    </div>
 
-    <a><h2 class="pay fixed-bottom" id="pay">Pay Now</h2>
-
-    <div class="container" id="container">
-        <a class="page" href="">
-            <img class="icon" src="Images/menu.png">
+    <nav class="nav fixed-bottom frame">
+        <a class="nav-link page" href="#!">
+            <img class="icon rounded-circle" src="Images/menu.png">
             <p>Menu</p>
         </a>
-        <a class="page" href="">
-            <img class="icon" src="Images/table.png">
+        <a class="nav-link page" href="#!">
+            <img class="icon rounded-circle" src="Images/table.png">
             <p>Table</p>
         </a>
-        <a class="page" href="">
-            <img class="icon" src="Images/orders_dark.png">
-            <p class="currentPage">Orders</p>
+        <a class="nav-link page" href="#!">
+            <img class="icon rounded-circle " src="Images/orders_dark.png">
+            <p>Orders</p>
         </a>
-        <a class="page" href="">
-            <img class="icon" src="Images/account.png">
+        <a class="nav-link page" href="#!">
+            <img class="icon rounded-circle" src="Images/account.png">
             <p>Account</p>
         </a>
-    </div>
-
-    
+    </nav>
 
 
     <!----------------------------------------------->
@@ -87,6 +106,10 @@
     <!----------------------------------------------->
 
     <script src="Scripts/script.js"></script>
+    <script src="Scripts/searchscripts.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
 
 </body>
 
