@@ -2,6 +2,7 @@ a.page {
     width: 25%;
     font-size: 12px;
     text-align: center;
+    
 }
 
 .frame {
@@ -10,8 +11,46 @@ a.page {
 }
 
 img.icon {
-    width: 1cm;
-    
+    height: 0.5cm;
+    padding-top: 1mm;
+}
+
+.pay {
+    display: flex;
+    justify-content: center;
+    background: lightgrey;
+    bottom: 10vh;
+    padding: 10px;
+    margin: 10px, 0px;
+}
+
+.container {
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-top: 1px solid black;
+}
+
+a.container {
+    text-decoration: none;
+}
+
+p {
+    color: #7D7D7D;
+    margin-bottom: 1mm;
+    margin-top: 0;
+    font-size: 2vh;
+}
+
+p.currentPage {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 
