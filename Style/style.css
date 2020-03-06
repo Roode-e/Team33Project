@@ -11,17 +11,24 @@ a.page {
 }
 
 img.icon {
-    height: 0.5cm;
+    height: 5mm;
+}
+
+.icon {
     padding-top: 1mm;
 }
 
 .pay {
+    position: fixed;
     display: flex;
     justify-content: center;
-    background: lightgrey;
-    bottom: 10vh;
-    padding: 10px;
-    margin: 10px, 0px;
+    background: #ffcc00;
+    bottom: 1cm;
+    margin: 2mm;
+    padding: 1mm;
+    font-size: 4.2mm;
+    border: 1px groove black;
+    border-radius: 3px;
 }
 
 .container {
@@ -32,10 +39,6 @@ img.icon {
     margin-bottom: 0px;
     padding-bottom: 0px;
     border-top: 1px solid black;
-}
-
-a.container {
-    text-decoration: none;
 }
 
 p {
@@ -53,4 +56,26 @@ a:hover {
     text-decoration: none;
 }
 
+.header {
+    display: flex;
+    top: 0;
+    padding-left: 2mm;
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    border-bottom: 1px solid black;
+    
+}
 
+
+
+
+.top-one img {
+    height: 5mm;
+    padding-right: 2mm;
+}
+
+.top-two {
+    margin: auto;
+    margin-left: 0;
+    font-size: 5mm;
+}
