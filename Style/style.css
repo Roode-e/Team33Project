@@ -26,6 +26,14 @@ img.icon {
     cursor: pointer;
 }
 
+.media {
+    padding-bottom: 5mm;
+}
+
+.input-group-prepend{
+    padding-bottom: 5mm;
+}
+
 .pay {
     position: fixed;
     display: flex;
