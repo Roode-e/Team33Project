@@ -21,7 +21,9 @@ img.icon {
 .mr-2 {
     height: 30vh;
     width: 40vw;
+    float: left;
     object-fit:cover;
+    cursor: pointer;
 }
 
 .pay {
