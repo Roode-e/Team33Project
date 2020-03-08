@@ -26,12 +26,75 @@ img.icon {
     cursor: pointer;
 }
 
+.mt-0 mb-1 {
+    float: none;
+}
+
 .media {
     padding-bottom: 5mm;
 }
 
 .input-group-prepend{
     padding-bottom: 5mm;
+}
+
+.pagehead {
+    position: relative;
+    background-color: ghostwhite;
+    overflow: hidden;
+}
+
+.pagehead:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 15vh;
+    background-image: url("../images/moreacorn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+}
+
+.pagehead h1 {
+    text-align:center;
+    position: relative;
+    z-index: 2;
+}
+
+.apps {
+    content: ' ';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: 15vh;
+    display: block;
+    background-color: ghostwhite;
+    overflow: hidden;
+}
+
+.apps:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 15vh;
+    background-image: url("../images/apps.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+}
+
+.apps h3 {
+    padding: 5vh;
+    text-align: center;
+    position: center;
+    z-index: 2;
 }
 
 .pay {
@@ -55,6 +118,7 @@ img.icon {
     margin-bottom: 0px;
     padding-bottom: 0px;
     border-top: 1px solid black;
+    background-color: gainsboro; /* For browsers that do not support gradients */
 }
 
 p {
