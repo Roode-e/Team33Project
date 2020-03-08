@@ -18,6 +18,12 @@ img.icon {
     padding-top: 1mm;
 }
 
+.mr-2 {
+    height: 30vh;
+    width: 40vw;
+    object-fit:cover;
+}
+
 .pay {
     position: fixed;
     display: flex;
@@ -65,9 +71,6 @@ a:hover {
     border-bottom: 1px solid black;
     
 }
-
-
-
 
 .top-one img {
     height: 5mm;

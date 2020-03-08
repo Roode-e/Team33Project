@@ -33,50 +33,71 @@
     <title>Restaraunts</title>
 
     <body>
+
         <div id="result">
             <!--Position information will be inserted here-->
         </div>
-        <button type="button" onclick="showPosition();" style='font-size:18px'>Location <i class='fas fa-map-marker-alt'></i></button>
+        <button type="button" onclick="showPosition();" style='font-size:18px'>Location <i
+                class='fas fa-map-marker-alt'></i></button>
     </body>
 
     <div class="input-group mt-2">
         <div class="input-group-prepend">
-            <span class="input-group-text">Search Restaraunts</span>
+            <span class="input-group-text">Search</span>
         </div>
         <input type="text" class="form-control">
     </div>
 
-<div class="bs-example">
-    <h4>Horizontal alignment using float classes</h4>
-    <div class="box clearfix">
-        <img src="/examples/images/avatar.svg" class="pull-left" alt="Sample Image">
-        <img src="/examples/images/avatar.svg" class="pull-right" alt="Sample Image">
-    </div>
-    
-    <h4>Left alignment using text alignment classes</h4>
-    <div class="box text-left">
-        <img src="images/.jpg" alt="Sample Image">
-    </div>
+    <ul class="list-unstyled">
+        <li class="media">
+            <img class="mr-2" src="images/meetonmain.jpg" alt="resteraunt">
+            <div class="media-body">
+                <h4 class="mt-0 mb-1">Meet On Main</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla.
+            </div>
+        </li>
+        <li class="media my-4">
+            <img class="mr-2" src="images/nuba.jpg" alt="resteraunt">
+            <div class="media-body">
+                <h4 class="mt-0 mb-1">Nuba on Davie</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla.
+            </div>
+        </li>
+        <li class="media">
+            <img class="mr-2" src="images/acorn.jpg" alt="resteraunt">
+            <div class="media-body">
+                <h4 class="mt-0 mb-1">Acorn</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla.
+            </div>
+        </li>
+    </ul>
 
-    <nav class="nav fixed-bottom frame">
-        <a class="nav-link page" href="#!">
-            <img class="icon rounded-circle" src="Images/menu.png">
+
+
+    <div class="container" id="container">
+        <a class="page" href="">
+            <img class="icon" src="Images/menu.png">
             <p>Menu</p>
         </a>
-        <a class="nav-link page" href="#!">
-            <img class="icon rounded-circle" src="Images/table.png">
+        <a class="page" href="">
+            <img class="icon" src="Images/table.png">
             <p>Table</p>
         </a>
-        <a class="nav-link page" href="#!">
-            <img class="icon rounded-circle " src="Images/orders_dark.png">
-            <p>Orders</p>
+        <a class="page" href="">
+            <img class="icon" src="Images/orders_dark.png">
+            <p class="currentPage">Orders</p>
         </a>
-        <a class="nav-link page" href="#!">
-            <img class="icon rounded-circle" src="Images/account.png">
+        <a class="page" href="">
+            <img class="icon" src="Images/account.png">
             <p>Account</p>
         </a>
-    </nav>
-
+    </div>
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, other API's    -->
