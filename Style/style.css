@@ -2,12 +2,12 @@ a.page {
     width: 25%;
     font-size: 12px;
     text-align: center;
-    
+
 }
 
 .frame {
     border-top: 1px solid black;
-    
+
 }
 
 img.icon {
@@ -22,7 +22,7 @@ img.icon {
     height: 30vh;
     width: 40vw;
     float: left;
-    object-fit:cover;
+    object-fit: cover;
     cursor: pointer;
 }
 
@@ -34,7 +34,7 @@ img.icon {
     padding-bottom: 5mm;
 }
 
-.input-group-prepend{
+.input-group-prepend {
     padding-bottom: 5mm;
 }
 
@@ -53,18 +53,19 @@ img.icon {
     background-image: url("../images/moreacorn.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.2;
     position: absolute;
     z-index: 1;
 }
 
 .pagehead h1 {
-    text-align:center;
+    text-align: center;
     position: relative;
     z-index: 2;
+    font-size: 6.5vh;
 }
 
-.apps {
+.media-body {
     content: ' ';
     display: block;
     position: relative;
@@ -73,7 +74,16 @@ img.icon {
     height: 15vh;
     display: block;
     background-color: ghostwhite;
+    ;
     overflow: hidden;
+}
+
+.media-body h2 {
+    padding: 5vh;
+    text-align: center;
+    position: center;
+    z-index: 2;
+    font-family: Georgia, serif;
 }
 
 .apps:before {
@@ -85,16 +95,66 @@ img.icon {
     background-image: url("../images/apps.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.2;
     position: absolute;
     z-index: 1;
 }
 
-.apps h3 {
-    padding: 5vh;
-    text-align: center;
-    position: center;
-    z-index: 2;
+.drinks:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 15vh;
+    background-image: url("../images/drinks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+}
+
+.soups:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 15vh;
+    background-image: url("../images/soup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+}
+
+.entrees:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 15vh;
+    background-image: url("../images/entree.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.desserts:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: 15vh;
+    background-image: url("../images/dessert.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
 }
 
 .pay {
@@ -118,7 +178,7 @@ img.icon {
     margin-bottom: 0px;
     padding-bottom: 0px;
     border-top: 1px solid black;
-    background-color: gainsboro; /* For browsers that do not support gradients */
+    background-color: ghostwhite;
 }
 
 p {
@@ -143,7 +203,7 @@ a:hover {
     padding-top: 1mm;
     padding-bottom: 1mm;
     border-bottom: 1px solid black;
-    
+
 }
 
 .top-one img {
