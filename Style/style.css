@@ -1,3 +1,7 @@
+body {
+    background-color: ghostwhite;
+}
+
 a.page {
     width: 25%;
     font-size: 12px;
@@ -18,16 +22,16 @@ img.icon {
     padding-top: 1mm;
 }
 
+.input-group mt-2 {
+    background-color: ghostwhite;
+}
+
 .mr-2 {
     height: 30vh;
     width: 40vw;
     float: left;
     object-fit: cover;
     cursor: pointer;
-}
-
-.mt-0 mb-1 {
-    float: none;
 }
 
 .media {
@@ -56,6 +60,7 @@ img.icon {
     opacity: 0.2;
     position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
 .pagehead h1 {
@@ -75,7 +80,7 @@ img.icon {
     display: block;
     background-color: ghostwhite;
     ;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .media-body h2 {
@@ -182,7 +187,7 @@ img.icon {
 }
 
 p {
-    color: #7D7D7D;
+    color: black;
     margin-bottom: 1mm;
     margin-top: 0;
     font-size: 2vh;
@@ -203,7 +208,6 @@ a:hover {
     padding-top: 1mm;
     padding-bottom: 1mm;
     border-bottom: 1px solid black;
-
 }
 
 .top-one img {

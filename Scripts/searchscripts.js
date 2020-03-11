@@ -5,6 +5,10 @@ src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 // Set up global variable
 var result;
 
+function goBack() {
+    window.location = ("searchpage.html")
+  }
+
 function showPosition() {
     // Store the element where the page displays the result
     result = document.getElementById("result");
@@ -34,4 +38,7 @@ function errorCallback(error) {
     } else {
         result.innerHTML = "Geolocation failed due to unknown error.";
     }
+    
 }
+
+
