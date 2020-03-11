@@ -1,0 +1,32 @@
+.pay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background: #ffcc00;
+    bottom: 1cm;
+    margin: 2mm;
+    padding: 1mm;
+    font-size: 4.2mm;
+    border: 1px groove black;
+    border-radius: 3px;
+}
+
+.header {
+    display: flex;
+    top: 0;
+    padding-left: 2mm;
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    border-bottom: 1px solid black;
+}
+
+.top-one img {
+    height: 5mm;
+    padding-right: 2mm;
+}
+
+.top-two {
+    margin: auto;
+    margin-left: 0;
+    font-size: 5mm;
+}

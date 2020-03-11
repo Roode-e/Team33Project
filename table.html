@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Search</title>
+    
+    <title>Tab</title>
 
     <!----------------------------------------------->
     <!--  Meta tag for rendering on mobile devices -->
@@ -21,7 +21,7 @@
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
-    <link rel="stylesheet" type="text/css" href="Style/menu.css">
+    <link rel="stylesheet" type="text/css" href="Style/table.css">
     <link rel="stylesheet" type="text/css" href="Style/navbar.css">
 
 </head>
@@ -31,61 +31,14 @@
     <!--  HTML Section -->
     <!------------------->
 
-
-    <title>Restaurants</title>
-
-    <body>
-
-        <div id="result">
-            <!--Position information will be inserted here-->
-        </div>
-        <button type="button" onclick="showPosition();" style='font-size:18px'>Location <i
-                class='fas fa-map-marker-alt'></i></button>
-    </body>
-
-    <div class="input-group mt-2">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Search</span>
-        </div>
-        <input type="text" class="form-control">
-    </div>
-
-    <ul class="list-unstyled">
-        <li class="media">
-            <a href="restarauntpage.html"><img class="mr-2" src="images/meetonmain.jpg" alt="restaraunt"></a>
-            <div class="media-body">
-                <h3 class="mt-0mb-1">Meet On Main</h3>
-                Our mission is to help transition the mainstream to eating more plant-based foods in a friendly,
-                accepting and engaging venue.
-            </div>
-        </li>
-        <li class="media">
-            <a href="restarauntpage.html"><img class="mr-2" src="images/nuba.jpg" alt="restaraunt"></a>
-            <div class="media-body">
-                <h3 class="mt-0mb-1">Nuba on Davie</h3>
-                Here at Nuba, we offer authentic, healthy Lebanese cuisine in harmony and rhythm with modern times.
-            </div>
-        </li>
-        <li class="media">
-            <a href="restarauntpage.html"><img class="mr-2" src="images/acorn.jpg" alt="restaraunt"></a>
-            <div class="media-body">
-                <h3 class="mt-0mb-1">The Acorn</h3>
-                The Acorn is an award-winning, vegetable-forward restaurant and bar located at the heart of Vancouver’s
-                Main St.
-            </div>
-        </li>
-    </ul>
-
-
-
     <div class="container" id="container">
         <a class="page" href="searchpage.html">
             <img class="icon" src="Images/menu.png">
-            <p class="currentPage">Menu</p class="currentPage">
+            <p>Menu</p>
         </a>
         <a class="page" href="table.html">
             <img class="icon" src="Images/table.png">
-            <p>Table</p>
+            <p class="currentPage">Table</p class="currentPage">
         </a>
         <a class="page" href="orders.html">
             <img class="icon" src="Images/orders_dark.png">
@@ -96,6 +49,9 @@
             <p>Account</p>
         </a>
     </div>
+
+    
+
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, other API's    -->
@@ -125,10 +81,6 @@
     <!----------------------------------------------->
 
     <script src="Scripts/script.js"></script>
-    <script src="Scripts/searchscripts.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-
 
 </body>
 
