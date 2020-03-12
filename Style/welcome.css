@@ -3,10 +3,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 11vh;
+    padding: 8vh 11vh;
 }
 
 h1 {
     font-size: 6vh;
     color: white;
+}
+
+.later{
+    position: absolute;
+    bottom: 2vh;
+    right: 4vw;
 }
