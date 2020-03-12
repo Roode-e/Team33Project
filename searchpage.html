@@ -34,14 +34,19 @@
 
     <title>Restaurants</title>
 
-    <body>
+    <div id="result">
+        <!--Position information will be inserted here-->
+    </div>
 
-        <div id="result">
-            <!--Position information will be inserted here-->
-        </div>
-        <button type="button" onclick="showPosition();" style='font-size:18px'>Location <i
-                class='fas fa-map-marker-alt'></i></button>
-    </body>
+    <div class="main-header">
+        <button type="button" onclick="showPosition();" style='font-size:18px'>Location 
+            <i class='fas fa-map-marker-alt'></i>
+        </button>
+
+        <a href="login.html">Login</a>
+    </div>
+
+    
 
     <div class="input-group mt-2">
         <div class="input-group-prepend">
@@ -78,7 +83,7 @@
 
 
     
-    <div class="container" id="container">
+    <div class="container-fluid">
         <a class="page" href="searchpage.html">
             <img class="icon" src="Images/menu.png">
             <p class="currentPage">Menu</p class="currentPage">
