@@ -1,12 +1,22 @@
 body {
     background-color: ghostwhite;
+
 }
 
-a.page {
-    width: 25%;
+.container-fluid {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-top: 1px solid black;
+    background-color: white;
+}
+
+.container-fluid a {
     font-size: 12px;
     text-align: center;
-
+    width: 25%;
 }
 
 img.icon {
@@ -17,20 +27,10 @@ img.icon {
     padding-top: 1mm;
 }
 
-.container {
-    
-    position: fixed;
-    display: flex;
-    /*flex-wrap: nowrap;*/
-    bottom: 0;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    border-top: 1px solid black;
-    background-color: ghostwhite;
-}
+
 
 p {
-    color: black;
+    color: grey;
     margin-bottom: 1mm;
     margin-top: 0;
     font-size: 2vh;
