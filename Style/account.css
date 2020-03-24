@@ -1,0 +1,14 @@
+.card {
+    object-fit: cover;
+    position: fixed;
+    display: flex;
+    height: 75vh;
+    width: 100vw;
+}
+
+.card-img-top {
+    object-fit:cover;
+    height: 40vh;
+    width: 100vw;
+    border-radius: 50%;
+}
