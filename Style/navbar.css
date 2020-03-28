@@ -1,5 +1,5 @@
 body {
-    background-color: ghostwhite;
+    background-color: white;
 
 }
 
@@ -11,6 +11,7 @@ body {
     padding-bottom: 0px;
     border-top: 1px solid black;
     background-color: white;
+    height: 8vh;
 }
 
 .container-fluid a {
@@ -29,7 +30,7 @@ img.icon {
 
 
 
-p {
+.icon-label {
     color: grey;
     margin-bottom: 1mm;
     margin-top: 0;
