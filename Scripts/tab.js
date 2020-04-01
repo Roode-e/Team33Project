@@ -1,7 +1,19 @@
+window.onload = function () {
+    db.collection("users").doc("T7U3Ls5JOnU2NrHnCPYru7l3lDw2")
+    .get()    //reads the collection of orders
+    .then(function(doc){
+        var ord = doc.data().order;  //returns array
+        ord.forEach(function(x){
+            displayItem(x);  //puts it to the DOM dynamic
+        })
+    })
+}
+
+
 let itemsList = [];
 
 
-function Item(src, name, price, status, itemID, leftID, rightID) {
+function Item(src, name, price, status, itemID) {
     this.item = document.createElement("div");
     this.item.id = itemID;
     let itemStyle = this.item.style;
@@ -22,6 +34,7 @@ function Item(src, name, price, status, itemID, leftID, rightID) {
     document.getElementById(itemID).appendChild(this.image);
     
     this.left = document.createElement("div");
+    let leftID = itemID + "left";
     this.left.id = leftID;
     let leftStyle = this.left.style;
     leftStyle.float = "left";
@@ -40,6 +53,7 @@ function Item(src, name, price, status, itemID, leftID, rightID) {
     document.getElementById(leftID).appendChild(this.price);
 
     this.right = document.createElement("div");
+    let rightID = itemID + "right";
     this.right.id = rightID;
     this.right.style.float = "right";
     document.getElementById(itemID).appendChild(this.right);
@@ -55,7 +69,21 @@ function Item(src, name, price, status, itemID, leftID, rightID) {
 
 }
 
-let burger = new Item("Images/meetonmain.jpg", "Burger", "$13.99", "Pending", "item1", "left1", "right1");
-let souvlaki = new Item("Images/chicken_souvlaki.jpg", "Chicken Souvlaki", "$12.49", "Pending", "item2", "left2", "right2");
-let rackOfLamb = new Item("Images/rack_of_lamb.jfif", "Rack of Lamb", "$15.99", "Pending", "item3", "left3", "right3");
-let seaFood = new Item("Images/seafood_platter.jpg", "Seafood Platter", "$25.99", "Pending", "item4", "left4", "right4"); 
+function displayItem(itemID) {
+    db.collection("menu").doc(itemID)
+    .get()    //reads the collection of orders
+    .then(function(doc){
+        
+        let name = doc.data().name;
+        let price = doc.data().price;
+        let image = doc.data().image;
+        
+        itemsList.push(new Item(image, name, "$" + price, "Pending", itemID));
+    })
+}
+
+
+//let burger = new Item("Images/meetonmain.jpg", "Burger", "$13.99", "Pending", "item1");
+//let souvlaki = new Item("Images/chicken_souvlaki.jpg", "Chicken Souvlaki", "$12.49", "Pending", "item2");
+//let rackOfLamb = new Item("Images/rack_of_lamb.jfif", "Rack of Lamb", "$15.99", "Pending", "item3");
+//let seaFood = new Item("Images/seafood_platter.jpg", "Seafood Platter", "$25.99", "Pending", "item4"); 
