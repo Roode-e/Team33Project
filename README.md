@@ -45,7 +45,7 @@ It has the following subfolders:
 ├── .git                     # Folder for git repo
 ├── images                   # Folder for images
 ├── scripts                  # Folder for scripts
-├── style                   # Folder for styles
+├── style                    # Folder for styles
 
 ```
 

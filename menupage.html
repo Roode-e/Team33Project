@@ -20,9 +20,8 @@
     <!------------------------>
     <!-- Your own CSS files -->
     <!------------------------>
-    <link rel="stylesheet" type="text/css" href="Style/menu.css">
+    <link rel="stylesheet" type="text/css" href="Style/test.css">
     <link rel="stylesheet" type="text/css" href="Style/navbar.css">
-    <link rel="stylesheet" type="text/css" href="Style/table.css">
 
 </head>
 
@@ -32,13 +31,14 @@
     <!------------------->
 
 
-    <title>Restaraunts</title>
+    <title>Restaurants</title>
 
+<div id="scrollable-part">
     <div class="pagehead" style="text-align: right;">
         <button onclick="goBack()" type="button" class="btn btn-ghost-primary"
             style="position: absolute; left: 0;">Back</button>
-        <a class="loginbtn" href="login.html">Login</a>
-        <h1>Acorn</h1>
+        <!--<a class="loginbtn" href="login.html">Login</a>-->
+        <h1 id="rest-name">Acorn</h1>
     </div>
 
     <div class="input-group mt-2">
@@ -48,7 +48,136 @@
         <input type="text" class="form-control">
     </div>
 
+    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+        <div class="categories" role="tab">
+            
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                        aria-controls="collapseOne1">
+                <div class="category" id="apps">               
+                    <h2 class="text">Appetizers</h2>
+                </div>
+            </a>
 
+            <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
+                data-parent="#accordionEx">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <img src="images/apps.jpg" class="card-img-top h-100" alt="fries">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">French Fries</h5>
+                                <button id="addtoorder" name="miso">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse2" aria-expanded="false"
+                aria-controls="collapse2">
+                <div class="category" id="drinks">
+                    <h2 class="text">Drinks</h2>
+                </div>
+            </a>
+
+            <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingOne2"
+                data-parent="#accordionEx">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <img src="images/gintonic.jpg" class="card-img-top h-100" alt="gint">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Gin and Tonic</h5>
+                                <button id="addtoorder">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse3" aria-expanded="false"
+                    aria-controls="collapse3">
+                <div class="category" id="soups">                  
+                    <h2 class="text">Soups and Sides</h2>                
+                </div>
+            </a>
+
+            <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingOne3"
+                data-parent="#accordionEx">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <img src="images/soup.jpg" class="card-img-top h-100" alt="miso">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Miso Soup</h5>
+                                <button id="addtoorder">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse4" aria-expanded="true"
+                    aria-controls="collapse4">
+                <div class="category" id="entrees">
+                    <h2 class="text">Entrees</h2>              
+                </div>
+            </a>
+
+            <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="headingOne3"
+                data-parent="#accordionEx">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <img src="images/chicken_souvlaki.jpg" class="card-img-top h-100" alt="chicksouv">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Souvlaki</h5>
+                                <button id="addtoorder">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse5" aria-expanded="true"
+                    aria-controls="collapse5">
+                <div class="category" id="desserts">                   
+                    <h2 class="text">Desserts</h2>                  
+                </div>
+            </a>
+
+            <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5"
+                data-parent="#accordionEx">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <img src="images/dessert.jpeg" class="card-img-top h-100" alt="lemcake">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Lemon Cheesecake & Blueberry</h5>
+                                <button id="addtoorder">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+
+<!--
     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
         <div class="categories" role="tab">
             <ul class="list-unstyled">
@@ -189,6 +318,8 @@
         </div>
     </div>
     </div>
+
+-->
 
     <div class="container-fluid">
         <a class="page" href="searchpage.html">

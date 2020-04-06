@@ -1,0 +1,117 @@
+
+
+#scrollable-part {
+    display: block;
+    overflow: auto;
+    height: 92vh;
+}
+
+.pagehead {
+    background-image: url("../images/moreacorn_dark.jpg");
+    height: 22mm;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#rest-name {
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 5px black;
+}
+
+
+.input-group mt-2 {
+    background-color: ghostwhite;
+}
+
+.mr-2 {
+    height: 30vh;
+    width: 40vw;
+    float: left;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.media {
+    padding-bottom: 5mm;
+}
+
+.input-group-prepend {
+    padding-bottom: 5mm;
+}
+
+
+/*******************Menu Categories*************************/
+
+.category {
+    height: 18mm;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 5px black;
+}
+
+#apps {
+    background-image: url("../Images/apps_dark.jpg");
+    z-index: 1;
+    pointer-events: none;
+}
+
+#drinks {
+    background-image: url("../images/drinks_dark.jpg");
+    z-index: 1;
+    pointer-events: none;
+}
+
+#soups {
+    background-image: url("../images/soup_dark.jpg");
+    z-index: 1;
+    pointer-events: none;
+}
+
+#entrees {
+    background-image: url("../images/entree_dark.jpg");
+    z-index: 1;
+    pointer-events: none;
+}
+
+#desserts {
+    background-image: url("../images/dessert.jpeg");
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
+
+#addtoorder {
+    background-color: #0835A4;
+    color: white;
+}
+
+.card {
+    width: 45%;
+}
