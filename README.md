@@ -33,7 +33,6 @@ Content of the project folder:
 ```
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
-├── 404.html                 # File for error
 ├── login.html               # login HTML file, contains logic for user authentication
 ├── account.html             # after logged in, lets you check and edit profile details and add a picture
 ├── restarauntpage.html      # allows you to browse through different restaraunts
