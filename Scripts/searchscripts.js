@@ -40,13 +40,15 @@ function errorCallback(error) {
     }
     
 }
+
+//tiny login name display
 function sayHello() {
     firebase.auth().onAuthStateChanged(function (user) {
         name = user.displayName; //get first and last name
         console.log(name);
         first = name.split(" ")[0]; //get first name only
         console.log(first);
-        document.getElementsByClassName("loginbtn")[0].innerHTML = first; //Elmo's
+        document.getElementsByClassName("loginbtn")[0].innerHTML = first;
     })
 }
 sayHello();

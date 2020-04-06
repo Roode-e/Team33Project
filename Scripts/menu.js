@@ -3,7 +3,6 @@ categories.id = "categories";
 document.body.appendChild(categories);
 
 
-
 function Category(name, image, id) {
     let ctg = document.createElement("div");
     ctg.id = id;

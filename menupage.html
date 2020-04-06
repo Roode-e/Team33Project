@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Search</title>
+
+    <!----------------------------------------------->
+    <!--  Meta tag for rendering on mobile devices -->
+    <!----------------------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!----------------------------------------------->
+    <!-- CSS: Bootstrap, Firebase, other API -->
+    <!----------------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <!------------------------>
+    <!-- Your own CSS files -->
+    <!------------------------>
+    <link rel="stylesheet" type="text/css" href="Style/menu.css">
+    <link rel="stylesheet" type="text/css" href="Style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="Style/table.css">
+
+</head>
+
+<body>
+    <!------------------->
+    <!--  HTML Section -->
+    <!------------------->
+
+
+    <title>Restaraunts</title>
+
+    <div class="pagehead" style="text-align: right;">
+        <button onclick="goBack()" type="button" class="btn btn-ghost-primary"
+            style="position: absolute; left: 0;">Back</button>
+        <a class="loginbtn" href="login.html">Login</a>
+        <h1>Acorn</h1>
+    </div>
+
+    <div class="input-group mt-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Search</span>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+
+
+    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+        <div class="categories" role="tab">
+            <ul class="list-unstyled">
+                <li class="apps">
+                    <div class="media-body">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                            aria-controls="collapseOne1">
+                            <h2 class="mt-0mb-1">Appetizers</h2>
+                        </a>
+                    </div>
+                </li>
+
+                <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
+                    data-parent="#accordionEx">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <img src="images/soup.jpg" class="card-img-top h-100" alt="...">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miso Soup</h5>
+                                    <button id="addtoorder" name="miso">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <li class="drinks">
+                    <div class="media-body">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse2" aria-expanded="false"
+                            aria-controls="collapse2">
+                            <h2 class="mt-0mb-1">Drinks</h2>
+                        </a>
+                    </div>
+                </li>
+
+                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingOne2"
+                    data-parent="#accordionEx">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <img src="images/soup.jpg" class="card-img-top h-100" alt="...">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miso Soup</h5>
+                                    <button id="addtoorder">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <li class="soups">
+                    <div class="media-body">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse3" aria-expanded="false"
+                            aria-controls="collapse3">
+                            <h2 class="mt-0mb-1">Soups and Sides</h2>
+                        </a>
+                    </div>
+                </li>
+
+                <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingOne3"
+                    data-parent="#accordionEx">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <img src="images/soup.jpg" class="card-img-top h-100" alt="...">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miso Soup</h5>
+                                    <button id="addtoorder">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <li class="entrees">
+                    <div class="media-body">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse4" aria-expanded="true"
+                            aria-controls="collapse4">
+                            <h2 class="mt-0mb-1">Entrees</h2>
+                        </a>
+                    </div>
+                </li>
+
+                <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="headingOne3"
+                    data-parent="#accordionEx">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <img src="images/soup.jpg" class="card-img-top h-100" alt="...">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miso Soup</h5>
+                                    <button id="addtoorder">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <li class="desserts">
+                    <div class="media-body">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse5" aria-expanded="true"
+                            aria-controls="collapse5">
+                            <h2 class="mt-0mb-1">Desserts</h2>
+                        </a>
+                    </div>
+                </li>
+
+                <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5"
+                    data-parent="#accordionEx">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <img src="images/soup.jpg" class="card-img-top h-100" alt="...">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miso Soup</h5>
+                                    <button id="addtoorder">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <a class="page" href="searchpage.html">
+            <img class="icon" src="Images/Icons/menu_dark.png">
+            <p class="currentPage icon-label">Menu</p>
+        </a>
+        <a class="page" href="table.html">
+            <img class="icon" src="Images/Icons/table.png">
+            <p class="icon-label">Table</p>
+        </a>
+        <a class="page" href="orders.html">
+            <img class="icon" src="Images/Icons/orders.png">
+            <p class="icon-label">Orders</p>
+        </a>
+        <a class="page" href="account.html">
+            <img class="icon" src="Images/Icons/account.png">
+            <p class="icon-label">Account</p>
+        </a>
+    </div>
+
+    <!----------------------------------------------->
+    <!-- JS: Boostrap, Firebase, other API's    -->
+    <!----------------------------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="Scripts\firebase_api_team33.js"></script>
+
+
+    <!----------------------------------------------->
+    <!-- JS files: Your own JavaScripts go here    -->
+    <!----------------------------------------------->
+
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/searchscripts.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+
+</body>
+
+</html>
