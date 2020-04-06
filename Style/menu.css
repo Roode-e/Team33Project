@@ -34,7 +34,7 @@
     background-image: url("../images/moreacorn.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.8;
     position: absolute;
     z-index: 1;
     pointer-events: none;
@@ -42,6 +42,7 @@
 
 .pagehead h1 {
     text-align: center;
+    color: white;
     position: relative;
     z-index: 2;
     font-size: 6.5vh;
@@ -67,6 +68,8 @@
     position: center;
     z-index: 2;
     font-family: Georgia, serif;
+    text-decoration: none;
+    color: black;
 }
 
 .apps:before {
@@ -81,6 +84,8 @@
     opacity: 0.2;
     position: absolute;
     z-index: 1;
+    pointer-events: none;
+
 }
 
 .drinks:before {
@@ -92,9 +97,10 @@
     background-image: url("../images/drinks.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.8;
     position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
 .soups:before {
@@ -109,6 +115,7 @@
     opacity: 0.2;
     position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
 .entrees:before {
@@ -123,6 +130,7 @@
     opacity: 0.2;
     position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
 
@@ -138,6 +146,7 @@
     opacity: 0.2;
     position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
 .main-header {
