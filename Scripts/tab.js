@@ -1,5 +1,5 @@
 
-
+let total = 0;
 let itemsList = [];
 
 /**
@@ -100,12 +100,16 @@ function displayItem(itemID) {
         let name = doc.data().name;
         let price = doc.data().price;
         let image = doc.data().image;
-        
+        total += price;
+        showBill(total);
         itemsList.push(new Item(image, name, "$" + price, "Pending", itemID));
     })
+    
 }
 
-
+/**
+ * Removes all items from user's order.
+ */
 function removeItems() {
     firebase.auth().onAuthStateChanged(function (user) {
         db.collection("users").doc(user.uid).update({
@@ -117,5 +121,14 @@ function removeItems() {
     })
     
     itemsList = [];
+}
+
+/**
+ * Shows new updated price.
+ * 
+ * @param {number} price 
+ */
+function showBill(price) {
+    document.getElementById("bill").innerHTML = "Total: $" + price;
 }
 

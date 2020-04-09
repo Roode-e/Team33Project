@@ -13,10 +13,16 @@
     font-size: 3vh;
 }
 
+#bill {
+    position: absolute;
+    bottom: 16vh;
+    left: 2vh;
+}
+
 .page-content {
     position: absolute;
     top: 6vh;
-    height: 80vh;
+    height: 74vh;
     width: 100vw;
     overflow: auto;
 }

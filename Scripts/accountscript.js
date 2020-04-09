@@ -5,10 +5,10 @@ function updateProfile() {
   let number = document.getElementById("phone").value;
 
   firebase.auth().onAuthStateChanged(function (user) {
-    db.collection("users").doc(user.uid).update ({
-          "name": names,
-          "address": address,
-          "phonenumber": number
+    db.collection("users").doc(user.uid).update({
+      "name": names,
+      "address": address,
+      "phonenumber": number
     });
     console.log(user.uid);
   });

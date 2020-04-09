@@ -5,13 +5,6 @@ src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 // Set up global variable
 var result;
 
-firebase.auth().onAuthStateChanged(function (user) {
-    db.collection("users").doc(user.uid)
-    .onSnapshot(function (doc) {
-        document.getElementById("loginbtn").innerHTML = doc.data().name
-    });
-})
- 
 
 function showPosition() {
     // Store the element where the page displays the result
@@ -45,15 +38,16 @@ function errorCallback(error) {
     
 }
 
-//tiny login name display - currently unused.
+// changes login button with name of current user
 function sayHello() {
     firebase.auth().onAuthStateChanged(function (user) {
         name = user.displayName; //get first and last name
         console.log(name);
         first = name.split(" ")[0]; //get first name only
         console.log(first);
-        document.getElementsByClassName("loginbtn")[0].innerHTML = first;
+        document.getElementById("loginbtn").innerHTML = first;
     })
 }
-//sayHello();
+
+sayHello();
 
