@@ -129,6 +129,6 @@ function removeItems() {
  * @param {number} price 
  */
 function showBill(price) {
-    document.getElementById("bill").innerHTML = "Total: $" + price;
+    document.getElementById("bill").innerHTML = "Total: $" + price.toFixed(2);
 }
 
