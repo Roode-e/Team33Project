@@ -90,25 +90,25 @@
 }
 
 #drinks {
-    background-image: url("../images/drinks_dark.jpg");
+    background-image: url("../Images/drinks_dark.jpg");
     z-index: 1;
     pointer-events: none;
 }
 
 #soups {
-    background-image: url("../images/soup_dark.jpg");
+    background-image: url("../Images/soup_dark.jpg");
     z-index: 1;
     pointer-events: none;
 }
 
 #entrees {
-    background-image: url("../images/entree_dark.jpg");
+    background-image: url("../Images/entree_dark.jpg");
     z-index: 1;
     pointer-events: none;
 }
 
 #desserts {
-    background-image: url("../images/dessert.jpeg");
+    background-image: url("../Images/dessert.jpeg");
     z-index: 1;
     pointer-events: none;
 }
