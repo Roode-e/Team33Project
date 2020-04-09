@@ -2,14 +2,6 @@
     background-color: ghostwhite;
 }
 
-.mr-2 {
-    height: 30vh;
-    width: 40vw;
-    float: left;
-    object-fit: cover;
-    cursor: pointer;
-}
-
 .media {
     padding-bottom: 5mm;
 }
@@ -48,28 +40,6 @@
 }
 
 /*******************Menu Categories*************************/
-
-.media-body {
-    content: ' ';
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    height: 15vh;
-    display: block;
-    background-color: rgb(95, 93, 93);
-    overflow: visible;
-}
-
-.media-body h2 {
-    padding: 5vh;
-    text-align: center;
-    position: center;
-    z-index: 2;
-    font-family: Georgia, serif;
-    text-decoration: none;
-    color: white;
-}
 
 .apps:before {
     content: ' ';
@@ -158,8 +128,4 @@
 #addtoorder {
     background-color: #0835A4;
     color: white;
-}
-
-.card {
-    width: 45%;
 }

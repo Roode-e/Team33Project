@@ -35,11 +35,12 @@
 
     <a href="searchpage.html"><button id="back">Back</button></a>
     <div id="scrollable-part">
-        <div class="pagehead">            
+        <div class="pagehead">
             <!--<a class="loginbtn" href="login.html">Login</a>-->
             <h1 id="rest-name">Acorn</h1>
         </div>
 
+        <!------------------ Search box ---------------->
         <div class="input-group mt-2">
             <div class="input-group-prepend">
                 <span class="input-group-text">Search</span>
@@ -47,22 +48,23 @@
             <input type="text" class="form-control">
         </div>
 
+        <!------------------------- Accordion tabs for the menu ---------------------------------------->
         <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
             <div class="categories" role="tab">
-                
+
                 <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                            aria-controls="collapseOne1">
-                    <div class="category" id="apps">               
+                    aria-controls="collapseOne1">
+                    <div class="category" id="apps">
                         <h2 class="text">Appetizers</h2>
                     </div>
                 </a>
 
                 <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
                     data-parent="#accordionEx">
-                    <div class="card">
+                    <div class="card mb-3">
                         <div class="row no-gutters">
                             <div class="col-md-5">
-                                <img src="images/apps.jpg" class="card-img-top h-100" alt="fries">
+                                <img src="images/apps.jpg" class="card-img-top" alt="fries">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body">
@@ -100,9 +102,9 @@
                 </div>
 
                 <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse3" aria-expanded="false"
-                        aria-controls="collapse3">
-                    <div class="category" id="soups">                  
-                        <h2 class="text">Soups and Sides</h2>                
+                    aria-controls="collapse3">
+                    <div class="category" id="soups">
+                        <h2 class="text">Soups and Sides</h2>
                     </div>
                 </a>
 
@@ -124,9 +126,9 @@
                 </div>
 
                 <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse4" aria-expanded="true"
-                        aria-controls="collapse4">
+                    aria-controls="collapse4">
                     <div class="category" id="entrees">
-                        <h2 class="text">Entrees</h2>              
+                        <h2 class="text">Entrees</h2>
                     </div>
                 </a>
 
@@ -135,7 +137,8 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-md-5">
-                                <img src="images/chicken_souvlaki.jpg" class="card-img-top h-100" alt="chicksouv">
+                                <img src="images/chicken_souvlaki.jpg" class="card-img-top h-100"
+                                    alt="chicksouv">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body">
@@ -148,9 +151,9 @@
                 </div>
 
                 <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse5" aria-expanded="true"
-                        aria-controls="collapse5">
-                    <div class="category" id="desserts">                   
-                        <h2 class="text">Desserts</h2>                  
+                    aria-controls="collapse5">
+                    <div class="category" id="desserts">
+                        <h2 class="text">Desserts</h2>
                     </div>
                 </a>
 
@@ -175,6 +178,7 @@
         </div>
     </div>
 
+    <!-------------------- Bottom navbar ----------------------->
     <div class="container-fluid">
         <a class="page" href="searchpage.html">
             <img class="icon" src="Images/Icons/menu_dark.png">

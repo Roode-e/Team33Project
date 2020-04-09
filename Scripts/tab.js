@@ -2,8 +2,6 @@
 
 let itemsList = [];
 
-
-
 /**
  * Grabs and displays items in a person's order.
  */
