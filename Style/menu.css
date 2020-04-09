@@ -1,5 +1,3 @@
-
-
 #scrollable-part {
     display: block;
     overflow: auto;
@@ -140,5 +138,5 @@
 }
 
 .content {
-    max-width: 59%;    
+    max-width: 59%;
 }

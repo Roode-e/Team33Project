@@ -42,8 +42,8 @@
     border-radius: 5px;
     width: 10vh;
     height: 10vh;
-    object-fit: cover; 
-    float: left;  
+    object-fit: cover;
+    float: left;
 }
 
 .item {
@@ -72,4 +72,3 @@
     font-size: 2.5vh;
     margin-top: 0.5vh;
 }
-

@@ -4,7 +4,7 @@ function updateProfile() {
   let address = document.getElementById("address").value;
   let number = document.getElementById("phone").value;
   let veggieCheck = document.getElementById("veggie");
-  
+
   firebase.auth().onAuthStateChanged(function (user) {
     db.collection("users").doc(user.uid).update({
       "name": names,

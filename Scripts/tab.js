@@ -1,4 +1,3 @@
-
 let total = 0;
 let itemsList = [];
 
@@ -7,13 +6,13 @@ let itemsList = [];
  */
 function showIt() {
     firebase.auth().onAuthStateChanged(function (user) {
-      db.collection("users").doc(user.uid)
-        .onSnapshot(function (doc) {
-            let ord = doc.data().order;  //returns array
-            ord.forEach(function(x){
-                displayItem(x);
-            })
-        });
+        db.collection("users").doc(user.uid)
+            .onSnapshot(function (doc) {
+                let ord = doc.data().order; //returns array
+                ord.forEach(function (x) {
+                    displayItem(x);
+                })
+            });
     })
 }
 
@@ -39,7 +38,7 @@ function Item(src, name, price, status, itemID) {
     itemStyle.display = "block";
     itemStyle.height = "10vh";
     document.getElementById("content").appendChild(this.item);
-    
+
     this.image = document.createElement("img");
     this.image.src = src;
     let imgStyle = this.image.style;
@@ -49,7 +48,7 @@ function Item(src, name, price, status, itemID) {
     imgStyle.objectFit = "cover";
     imgStyle.float = "left";
     document.getElementById(itemID).appendChild(this.image);
-    
+
     this.left = document.createElement("div");
     let leftID = itemID + "left";
     this.left.id = leftID;
@@ -94,17 +93,17 @@ function Item(src, name, price, status, itemID) {
  */
 function displayItem(itemID) {
     db.collection("menu").doc(itemID)
-    .get()    //reads the collection of orders
-    .then(function(doc){
-        
-        let name = doc.data().name;
-        let price = doc.data().price;
-        let image = doc.data().image;
-        total += price;
-        showBill(total);
-        itemsList.push(new Item(image, name, "$" + price, "Pending", itemID));
-    })
-    
+        .get() //reads the collection of orders
+        .then(function (doc) {
+
+            let name = doc.data().name;
+            let price = doc.data().price;
+            let image = doc.data().image;
+            total += price;
+            showBill(total);
+            itemsList.push(new Item(image, name, "$" + price, "Pending", itemID));
+        })
+
 }
 
 /**
@@ -119,7 +118,7 @@ function removeItems() {
             location.reload();
         })
     })
-    
+
     itemsList = [];
 }
 
@@ -131,4 +130,3 @@ function removeItems() {
 function showBill(price) {
     document.getElementById("bill").innerHTML = "Total: $" + price.toFixed(2);
 }
-

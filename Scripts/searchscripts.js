@@ -35,7 +35,7 @@ function errorCallback(error) {
     } else {
         result.innerHTML = "Geolocation failed due to unknown error.";
     }
-    
+
 }
 
 // changes login button with name of current user
@@ -50,4 +50,3 @@ function sayHello() {
 }
 
 sayHello();
-

@@ -20,8 +20,8 @@ function addToOrder(num) {
 function createCategoryHolder() {
     let categories = document.createElement("div");
     categories.id = "categories";
-    document.body.appendChild(categories);    
-}    
+    document.body.appendChild(categories);
+}
 
 
 /**
@@ -52,6 +52,5 @@ function Category(name, image, id) {
     text.style.textShadow = "0px 0px 5px black";
     text.style.color = "white";
     text.innerHTML = name;
-    
-}
 
+}
