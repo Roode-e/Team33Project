@@ -5,9 +5,13 @@ src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 // Set up global variable
 var result;
 
-function goBack() {
-    window.location = ("searchpage.html");
-}
+firebase.auth().onAuthStateChanged(function (user) {
+    db.collection("users").doc(user.uid)
+    .onSnapshot(function (doc) {
+        document.getElementById("loginbtn").innerHTML = doc.data().name
+    });
+})
+ 
 
 function showPosition() {
     // Store the element where the page displays the result
@@ -41,7 +45,7 @@ function errorCallback(error) {
     
 }
 
-//tiny login name display
+//tiny login name display - currently unused.
 function sayHello() {
     firebase.auth().onAuthStateChanged(function (user) {
         name = user.displayName; //get first and last name
@@ -51,5 +55,5 @@ function sayHello() {
         document.getElementsByClassName("loginbtn")[0].innerHTML = first;
     })
 }
-sayHello();
+//sayHello();
 

@@ -1,8 +1,37 @@
-let categories = document.createElement("div");
-categories.id = "categories";
-document.body.appendChild(categories);
+/**
+ * adds item to array of items in a particular users order.
+ * 
+ * @param {number} num 
+ */
+function addToOrder(num) {
+    let item = "item" + num;
+    firebase.auth().onAuthStateChanged(function (user) {
+        db.collection("users").doc(user.uid).update({
+            order: firebase.firestore.FieldValue.arrayUnion(item)
+        })
+    })
+}
 
 
+
+/**
+ * Currently unused.
+ */
+function createCategoryHolder() {
+    let categories = document.createElement("div");
+    categories.id = "categories";
+    document.body.appendChild(categories);    
+}    
+
+
+/**
+ * Currently unused, but could be added for dynamic generation of menu
+ * categories which include users dietary preferences.
+ * 
+ * @param {string} name 
+ * @param {string} image 
+ * @param {string} id 
+ */
 function Category(name, image, id) {
     let ctg = document.createElement("div");
     ctg.id = id;
@@ -24,11 +53,5 @@ function Category(name, image, id) {
     text.style.color = "white";
     text.innerHTML = name;
     
-
 }
 
-let appetizers = new Category("Appetizers", "Images/apps_dark.jpg", "category1");
-let drinks = new Category("Drinks", "Images/drinks_dark.jpg", "category2");
-let soups = new Category("Soups and Salads", "Images/soup_dark.jpg", "category3");
-let entrees = new Category("Entrees", "Images/entree_dark.jpg", "category4");
-let dessert = new Category("Desserts", "Images/dessert_dark.jpeg", "category5");

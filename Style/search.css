@@ -48,7 +48,12 @@
     font-size: 6.5vh;
 }
 
+
 /*******************Menu Categories*************************/
+
+.media {
+    overflow: hidden;
+}
 
 .media-body {
     content: ' ';
@@ -57,10 +62,10 @@
     width: 100%;
     height: 100%;
     height: 15vh;
-    display: block;
     background-color: ghostwhite;
-    overflow: visible;
 }
+
+
 
 .media-body h2 {
     padding: 5vh;
@@ -72,82 +77,6 @@
     color: black;
 }
 
-.apps:before {
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 100%;
-    height: 15vh;
-    background-image: url("../images/apps.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-
-}
-
-.drinks:before {
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 100%;
-    height: 15vh;
-    background-image: url("../images/drinks.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.soups:before {
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 100%;
-    height: 15vh;
-    background-image: url("../images/soup.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.entrees:before {
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 100%;
-    height: 15vh;
-    background-image: url("../images/entree.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-}
-
-
-.desserts:before {
-    content: ' ';
-    display: block;
-    width: 100%;
-    height: 100%;
-    height: 15vh;
-    background-image: url("../images/dessert.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    position: absolute;
-    z-index: 1;
-    pointer-events: none;
-}
 
 .main-header {
     display: flex;

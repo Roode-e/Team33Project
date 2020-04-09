@@ -35,12 +35,13 @@
     <div class="card">
 
         <img class="card-img-top" src="Images/avatar.jpg" alt="Card image cap">
-        <span id="spaniard" style="font-size:20px;cursor:pointer">
+        <div id="spaniard" style="font-size:20px;cursor:pointer">
             <button type="button" id="edit" class="btn btn-default btn-sm">
-                <img class="icon" src="Images/Icons/pencil.png">
+                <img class="icon" src="Images/Icons/pencil.png" height="3vh">
                 Edit Profile
             </button>
-        </span>
+        </div>
+
         <div class="card-body">
             <h5 id="namefield" class="card-title">Name</h5>
         </div>
@@ -78,14 +79,15 @@
             </div>
         </div>
 
-        <ul class="list-group list-group-flush">
-            <li id="numberer" class="list-group-item">Phone number</li>
-            <li id="addresser" class="list-group-item">Address</li>
-            <li class="list-group-item">Dietary Preferences</li>
-            <li class="list-group-item">Order History</li>
-        </ul>
+       
         <div class="card-body">
-            <a href="#" class="card-link">Payment information</a>
+            <ul class="list-group list-group-flush list">
+                <li id="numberer" class="list-group-item">Phone number</li>
+                <li id="addresser" class="list-group-item">Address</li>
+                <li class="list-group-item">Dietary Preferences</li>
+                <li class="list-group-item">Order History</li>
+                <a href="#" class="card-link"><li>Payment information</li></a>
+            </ul>           
         </div>
     </div>
 
@@ -137,7 +139,6 @@
 <!-- JS files: Your own JavaScripts go here    -->
 <!----------------------------------------------->
 
-<script src="Scripts/script.js"></script>
 <script src="Scripts/accountscript.js"></script>
 
 <!--------------------------------------------------------------------->

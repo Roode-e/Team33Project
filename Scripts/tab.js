@@ -1,18 +1,37 @@
-window.onload = function () {
-    db.collection("users").doc("T7U3Ls5JOnU2NrHnCPYru7l3lDw2")
-    .get()    //reads the collection of orders
-    .then(function(doc){
-        var ord = doc.data().order;  //returns array
-        ord.forEach(function(x){
-            displayItem(x);  //puts it to the DOM dynamic
-        })
-    })
-}
 
 
 let itemsList = [];
 
 
+
+/**
+ * Grabs and displays items in a person's order.
+ */
+function showIt() {
+    firebase.auth().onAuthStateChanged(function (user) {
+      db.collection("users").doc(user.uid)
+        .onSnapshot(function (doc) {
+            let ord = doc.data().order;  //returns array
+            ord.forEach(function(x){
+                displayItem(x);
+            })
+        });
+    })
+}
+
+showIt();
+
+
+/**
+ * Item constructor. Displays and styles each image, name, price, 
+ * and status of each menu item.
+ * 
+ * @param {string} src 
+ * @param {string} name 
+ * @param {number} price 
+ * @param {string} status 
+ * @param {string} itemID 
+ */
 function Item(src, name, price, status, itemID) {
     this.item = document.createElement("div");
     this.item.id = itemID;
@@ -43,6 +62,7 @@ function Item(src, name, price, status, itemID) {
 
     this.name = document.createElement("div");
     this.name.innerHTML = name;
+    this.name.style.fontSize = "2.8vh";
 
     this.price = document.createElement("div");
     this.price.style.fontSize = "2.5vh";
@@ -63,12 +83,17 @@ function Item(src, name, price, status, itemID) {
 
     this.status = document.createElement("div");
     this.status.style.fontSize = "2.5vh";
-    this.status.style.marginTop = "0.5vh";
     this.status.innerHTML = status;
     document.getElementById(rightID).appendChild(this.status);
 
 }
 
+/**
+ * Grabs information about a menu item and puts it in Item constructor arguments.
+ * Pushes each item into itemsList array.
+ * 
+ * @param {string} itemID 
+ */
 function displayItem(itemID) {
     db.collection("menu").doc(itemID)
     .get()    //reads the collection of orders
@@ -83,7 +108,16 @@ function displayItem(itemID) {
 }
 
 
-//let burger = new Item("Images/meetonmain.jpg", "Burger", "$13.99", "Pending", "item1");
-//let souvlaki = new Item("Images/chicken_souvlaki.jpg", "Chicken Souvlaki", "$12.49", "Pending", "item2");
-//let rackOfLamb = new Item("Images/rack_of_lamb.jfif", "Rack of Lamb", "$15.99", "Pending", "item3");
-//let seaFood = new Item("Images/seafood_platter.jpg", "Seafood Platter", "$25.99", "Pending", "item4"); 
+function removeItems() {
+    firebase.auth().onAuthStateChanged(function (user) {
+        db.collection("users").doc(user.uid).update({
+            order: firebase.firestore.FieldValue.delete(),
+            order: []
+        }).then(function () {
+            location.reload();
+        })
+    })
+    
+    itemsList = [];
+}
+

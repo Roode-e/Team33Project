@@ -1,4 +1,4 @@
-// Your web app's Firebase configuration
+// Ultra-Tab Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyDtEPK96lFKUMEuDMlChgpOb1pJIYe92dw",
   authDomain: "ultra-tab.firebaseapp.com",

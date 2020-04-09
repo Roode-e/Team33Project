@@ -2,17 +2,19 @@
     object-fit: cover;
     position: fixed;
     display: flex;
-    height: 75vh;
+    height: 92vh;
     width: 100vw;
+    overflow: auto;
 }
 
 .card-img-top {
     position: relative;
     object-fit: contain;
-    height: 50%;
+    height: 30%;
     width: 60%;
     border-radius: 50%;
 }
+
 
 
 /*overlay styles*/
@@ -81,4 +83,8 @@
   
   ul li .dropdown-menu a {
     font-size: 20px;
+  }
+
+  .list {
+      list-style-type: none;
   }

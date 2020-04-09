@@ -1,9 +1,8 @@
 //updates logged in user profile info according to input
 function updateProfile() {
-
-let names = document.getElementById("fname").value;
-let address = document.getElementById("address").value;
-let number = document.getElementById("phone").value;
+  let names = document.getElementById("fname").value;
+  let address = document.getElementById("address").value;
+  let number = document.getElementById("phone").value;
 
   firebase.auth().onAuthStateChanged(function (user) {
     db.collection("users").doc(user.uid).update ({
@@ -13,6 +12,7 @@ let number = document.getElementById("phone").value;
     });
     console.log(user.uid);
   });
+
   showIt();
 }
 
