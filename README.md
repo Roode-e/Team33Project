@@ -7,8 +7,8 @@
 EasyTab is a browser based web application brought to you by the folks over at Team 33.
 This app brings the process of ordering food at a restaraunt, price calculation 
 and menu browsing all on your phone.
-The user can login, customize their profile, browse options for restaraunts and menus 
-and add orders to a tab screen, ready to pay and check out whenever the user is.
+The user can login, customize their profile, browse options for restaraunts and menus, 
+add orders to a tab screen and pay and check out whenever they want.
 Many components are under construction.
 
 This project demonstrates:
@@ -17,7 +17,7 @@ This project demonstrates:
 * customized user experience after login/signup
 * tracking of a data point provided by the user
 * use of navbar and cards from boostrap
-* css styling, js functions and html
+* accordion and overlay styling using css, js functions and html
 
 	
 ## Technologies
