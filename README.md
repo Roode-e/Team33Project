@@ -16,8 +16,8 @@ This project demonstrates:
 * use of firebase authentication and creation of a users collection in firestore
 * customized user experience after login/signup
 * tracking of a data point provided by the user
-* use of navbar from boostrap
-* use of cards from bootstrap
+* use of navbar and cards from boostrap
+* css styling, js function and html
 
 	
 ## Technologies
