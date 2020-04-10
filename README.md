@@ -17,7 +17,7 @@ This project demonstrates:
 * customized user experience after login/signup
 * tracking of a data point provided by the user
 * use of navbar and cards from boostrap
-* css styling, js function and html
+* css styling, js functions and html
 
 	
 ## Technologies
