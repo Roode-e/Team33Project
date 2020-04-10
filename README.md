@@ -4,8 +4,8 @@
 * [Contents](#content)
 
 ## General Info
-EasyTab is a browser based web application brought to your by the folks over at Team 33.
-This app bring the process of ordering food at a restaraunt, price calculation 
+EasyTab is a browser based web application brought to you by the folks over at Team 33.
+This app brings the process of ordering food at a restaraunt, price calculation 
 and menu browsing all on your phone.
 The user can login, customize their profile, browse options for restaraunts and menus 
 and add orders to a tab screen, ready to pay and check out whenever the user is.
